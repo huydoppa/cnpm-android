@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="10">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="4"
+                android:background="@drawable/title">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/oval_title">
+                    <TextView
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Pet"
+                        android:textColor="#ff00"
+                        android:textStyle="bold"
+                        android:textSize="40sp"
+                        android:layout_marginRight="10dp"/>
+                    <TextView
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Shop"
+                        android:textColor="#2196F3"
+                        android:textStyle="bold"
+                        android:textSize="40sp"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="vertical"
+                android:background="@drawable/line_around">
+                <TextView
+                    android:padding="5dp"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Loại sản phẩm"/>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/list_products"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/line_around"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="vertical"
+                android:background="@drawable/line_around">
+                <RelativeLayout
+                    android:padding="10dp"
+                    android:background="@drawable/line_around"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dịch vụ"
+                        android:layout_alignParentLeft="true"/>
+                    <TextView
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Xem tất cả"
+                        android:layout_alignParentRight="true"
+                        android:textSize="20sp"
+                        android:textColor="#2196F3"
+                        android:id="@+id/ViewAllService"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+</LinearLayout>
