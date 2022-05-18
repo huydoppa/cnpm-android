@@ -167,6 +167,7 @@ public class ProductActivity extends AppCompatActivity {
 
         return list;
     }
+    //them vao gio
     private void addToCart(String idProduct){
         String url = "http://10.10.19.2:1337/api/cart";
         RequestQueue requestQueue = Volley.newRequestQueue(this);

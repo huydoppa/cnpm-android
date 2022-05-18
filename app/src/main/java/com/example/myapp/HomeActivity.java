@@ -187,6 +187,7 @@ public class HomeActivity extends AppCompatActivity {
         requestQueue.add(request);
 
     }
+    //xem gio san pham
     private void getCart(){
         LoginActivity.cartList.clear();
         String url = "http://10.10.19.2:1337/api/cart" ;
